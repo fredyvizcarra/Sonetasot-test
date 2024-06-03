@@ -40,10 +40,19 @@ This project involves developing an appointment management application using Ang
     cd ../backend
     npm install
     ```
-4. Run Docker Compose to start the services:
+4. Create a `.env` file in the `backend` directory by copying `example.env` and filling in the required environment variables:
+    ```sh
+    cd backend
+    cp example.env .env
+    # Edit .env file to set the correct values
+    ```
+5. Run Docker Compose to start the services:
     ```sh
     docker-compose up --build
     ```
+### Accessing the Application
+- **Backend:** The backend API will be running on `http://localhost:50000`.
+- **Frontend:** The frontend application will be running on `http://localhost:31019`.
 
 ### Production Deployment
 1. Ensure Docker and Docker Compose are installed on your server.
@@ -66,6 +75,8 @@ This project involves developing an appointment management application using Ang
 - **PUT** `/api/appointments/:id`: Update an existing appointment.
 - **DELETE** `/api/appointments/:id`: Delete an appointment.
 
+## Base URL
+http://localhost:50000/api
 
 ## Authentication
 This API uses JWT (JSON Web Token) for authentication. The token must be included in the `Authorization` header as a Bearer token for the protected routes.
@@ -205,6 +216,12 @@ This API uses JWT (JSON Web Token) for authentication. The token must be include
 
 ## ER Diagram
 [![](https://mermaid.ink/img/pako:eNqVULsOgzAM_JXIM_wAW6UyVBUUFbpUWSySQtSSIJMMFfDvJaQPVerSG2z5dPLZN0JthIQEJG0VNoQd12zBqUyPJRvD4KG0ZUqwYv-hBktKN6x21AdyDi3UTVEcdnmVpXn19yIPgVau5cfucN00xbEZv4wSxqHFgQPXEEEnqUMllu9Wfw62lZ3k4FUC6epl86JDZ0151zUklpyMgIxrWkgueBuWyfX-imc6b1YKZQ1lIbw1wwh61GdjXpr5AdwRaMM?type=png)](https://mermaid.live/edit#pako:eNqVULsOgzAM_JXIM_wAW6UyVBUUFbpUWSySQtSSIJMMFfDvJaQPVerSG2z5dPLZN0JthIQEJG0VNoQd12zBqUyPJRvD4KG0ZUqwYv-hBktKN6x21AdyDi3UTVEcdnmVpXn19yIPgVau5cfucN00xbEZv4wSxqHFgQPXEEEnqUMllu9Wfw62lZ3k4FUC6epl86JDZ0151zUklpyMgIxrWkgueBuWyfX-imc6b1YKZQ1lIbw1wwh61GdjXpr5AdwRaMM)
+
+## Screenshots
+
+![Alt text](screenshots/Screenshot-1.png)
+![Alt text](screenshots/Screenshot-2.png)
+![Alt text](screenshots/Screenshot-3.png)
 
 ## Contribution
 Contributions are welcome. Please open an issue to discuss any major changes before submitting a pull request.
