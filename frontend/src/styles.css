@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nutmeg";
+  src: url("/assets/fonts/Nutmeg-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Nutmeg-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nutmeg";
+  src: url("/assets/fonts/Nutmeg-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Nutmeg-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nutmeg";
+  src: url("/assets/fonts/Nutmeg-Light.woff2") format("woff2"),
+    url("/assets/fonts/Nutmeg-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
