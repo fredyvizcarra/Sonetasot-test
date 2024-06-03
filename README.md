@@ -87,8 +87,7 @@ This API uses JWT (JSON Web Token) for authentication. The token must be include
       "id": 1,
       "curp": "SOME_CURP",
       "date": "2024-06-23"
-    },
-    ...
+    }
   ]
 
 ### Get Appointment Details
